@@ -12,8 +12,8 @@ body {
 }
 
 .center {
-    padding-left: 30vh;
-    padding-right: 30vh;
+    padding-left: 18vw;
+    padding-right: 18vw;
 }
 
 .top {
@@ -50,6 +50,10 @@ body {
         }
     }
 
+    &__star_mob {
+            display: none;
+        }
+
     &__scroll_bar {
         position: absolute;
         bottom: 0;
@@ -57,7 +61,7 @@ body {
         overflow: hidden;
         margin-top: 156px;
     }
-    
+
 }
 
 .top_content {
@@ -147,6 +151,10 @@ body {
         color: $color-white;
     }
 
+    &__title_mobile {
+        display: none;
+    }
+
     &__desc {
         margin-top: 24px;
         font-weight: 400;
@@ -192,7 +200,11 @@ body {
         flex-direction: column;
         gap: 16px;
         margin: 35px;
-}
+    }
+
+    &__content_mob {
+            display: none;
+    }
 
     &__num {
         text-decoration: none;
@@ -214,3 +226,9 @@ body {
         color: $color-black;
     }
 }
+
+.footer {
+    display: none;
+}
+
+@import '_mobile.scss';
