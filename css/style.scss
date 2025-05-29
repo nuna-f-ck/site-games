@@ -227,8 +227,135 @@ body {
     }
 }
 
+.mini_game {
+    position: relative;
+    background-color: $color-black;
+    padding-top: 46px;
+    padding-bottom: 144px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &__star {
+        position: absolute;
+
+        &1 {
+            width: 35px;
+            top: 93px;
+            right: 123px;
+        }
+        &2 {
+            width: 68px;
+            top: 126px;
+            right: 45px;
+        }
+        &3 {
+            width: 35px;
+            bottom: 65px;
+            right: 150px;
+        }
+        &4 {
+            width: 68px;
+            bottom: 45px;
+            right: 52px;
+        }
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $color-white;
+        padding-bottom: 72px;
+    }
+
+    &__card {
+        height: 500px;
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: #FFFFFF;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: 48px;
+    }
+
+    &__name {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $color-black;
+    }
+
+    &__desc {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $color-black;
+    }
+
+    &__button {
+        border-radius: 60px;
+        background-color: $color-black;
+        color: white;
+        width: 247px;
+        height: 66px;
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10;
+        padding: 16px 28px 16px 28px;
+
+        /* Inside Auto Layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 36px 0px;
+
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
+
 .footer {
-    display: none;
+    display: block;
+    background-color: #BDED35;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &__text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #000;
+    }
 }
 
 @import '_mobile.scss';

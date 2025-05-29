@@ -157,20 +157,9 @@
     }
 
     .footer {
-        display: block;
-        background-color: #BDED35;
         height: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
         &__text {
             font-size: 16px;
-            font-weight: 600;
-            line-height: 20px;
-            letter-spacing: 0px;
-            text-align: center;
-            color: #000;
         }
     }
 }
