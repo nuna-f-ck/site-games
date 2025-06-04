@@ -204,11 +204,8 @@ body {
     width: 378px;
     border-radius: 30px;
     padding-bottom: 36px;
-    &_short {
-        background-color: white;
-        width: 378px;
-        border-radius: 30px;
-        padding-bottom: 36px;
+    &_a {
+        text-decoration: none;
     }
 
     &__content {
