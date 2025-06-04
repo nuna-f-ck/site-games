@@ -9,56 +9,79 @@ body {
 }
 
 .center {
-  padding-left: 30vh;
-  padding-right: 30vh;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-.top {
+.top_background {
   position: relative;
   background: #E1FF8F;
-  height: 800px;
 }
-.top__star {
+
+.top_background__star {
   position: absolute;
 }
-.top__star1 {
+
+.top_background__star1 {
   top: 94px;
   left: 63px;
 }
-.top__star2 {
+
+.top_background__star2 {
   top: 69px;
   left: 156px;
 }
-.top__star3 {
+
+.top_background__star3 {
   top: 538px;
   right: 448px;
 }
-.top__star4 {
+
+.top_background__star4 {
   top: 568px;
   right: 365px;
 }
-.top__star5 {
+
+.top_background__star5 {
   top: 0;
   right: 0;
 }
-.top__scroll_bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
+.top_background__scroll_bar {
+  padding: 0px;
+  gap: 10px;
+  border: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  display: flex;
+  align-items: center;
+  height: 90px;
   overflow: hidden;
-  margin-top: 156px;
+}
+
+.top_background__scroll_bar_text {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  text-transform: uppercase;
+  padding-right: 51px;
+  padding-left: 51px;
+  white-space: nowrap;
 }
 
 .top_content {
   padding-top: 196px;
-  width: 769px;
-  height: 769px;
+  padding-bottom: 156px;
   display: flex;
   gap: 48px;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: flex-start;
 }
+
 .top_content__title {
   font-weight: 700;
   font-size: 64px;
@@ -67,6 +90,7 @@ body {
   vertical-align: middle;
   color: #202027;
 }
+
 .top_content__text {
   font-weight: 600;
   font-size: 24px;
@@ -75,7 +99,9 @@ body {
   vertical-align: middle;
   color: #202027;
 }
+
 .top_content__button {
+  text-decoration: none;
   background: #202027;
   width: 247px;
   height: 66;
@@ -93,6 +119,7 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+
 .top_content__button:hover {
   background-color: white;
   color: black;
@@ -103,17 +130,21 @@ body {
   position: relative;
   padding-bottom: 50px;
 }
+
 .about_games__star {
   position: absolute;
 }
+
 .about_games__star1 {
   top: 77px;
   right: 0;
 }
+
 .about_games__star2 {
   top: 770px;
   left: 28px;
 }
+
 .about_games__star3 {
   top: 822px;
   left: 45px;
@@ -128,6 +159,7 @@ body {
   vertical-align: middle;
   color: #FFFFFF;
 }
+
 .about__desc {
   margin-top: 24px;
   font-weight: 400;
@@ -158,21 +190,21 @@ body {
 .card_game {
   background-color: white;
   width: 378px;
-  height: 512px;
   border-radius: 30px;
+  padding-bottom: 36px;
 }
-.card_game_short {
-  height: 473px;
-  background-color: white;
-  width: 378px;
-  border-radius: 30px;
+
+.card_game_a {
+  text-decoration: none;
 }
+
 .card_game__content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 35px;
 }
+
 .card_game__num {
   text-decoration: none;
   font-weight: 500;
@@ -182,6 +214,7 @@ body {
   vertical-align: bottom;
   color: #202027;
 }
+
 .card_game__name {
   text-decoration-line: none;
   font-weight: 700;
@@ -190,4 +223,10 @@ body {
   letter-spacing: 0px;
   vertical-align: middle;
   color: #202027;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.footer {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
