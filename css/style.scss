@@ -12,8 +12,8 @@ body {
 }
 
 .center {
-    padding-left: 18vw;
-    padding-right: 18vw;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .top_background {
