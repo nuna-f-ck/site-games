@@ -13,35 +13,35 @@ body {
   padding-right: calc(50% - 600px);
 }
 
-.top_background {
+.header {
   position: relative;
   background: #E1FF8F;
 }
-.top_background__star {
+.header__star {
   position: absolute;
 }
-.top_background__star1 {
+.header__star--1 {
   top: 94px;
   left: 63px;
 }
-.top_background__star2 {
+.header__star--2 {
   top: 69px;
   left: 156px;
 }
-.top_background__star3 {
+.header__star--3 {
   top: 538px;
   right: 448px;
 }
-.top_background__star4 {
+.header__star--4 {
   top: 568px;
   right: 365px;
 }
-.top_background__star5 {
+.header__star--5 {
   top: 0;
   right: 0;
 }
 
-.top_background__scroll_bar {
+.scroll-bar {
   padding: 0px;
   gap: 10px;
   border: 1px;
@@ -54,7 +54,7 @@ body {
   height: 90px;
   overflow: hidden;
 }
-.top_background__scroll_bar_text {
+.scroll-bar__text {
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
@@ -65,7 +65,7 @@ body {
   white-space: nowrap;
 }
 
-.top_content {
+.header__content {
   padding-top: 196px;
   padding-bottom: 156px;
   display: flex;
@@ -74,7 +74,7 @@ body {
   flex-wrap: nowrap;
   align-content: flex-start;
 }
-.top_content__title {
+.header__title {
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
@@ -82,7 +82,7 @@ body {
   vertical-align: middle;
   color: #202027;
 }
-.top_content__text {
+.header__text {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -90,7 +90,7 @@ body {
   vertical-align: middle;
   color: #202027;
 }
-.top_content__button {
+.header__button {
   text-decoration: none;
   background: #202027;
   width: 247px;
@@ -109,33 +109,34 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-.top_content__button:hover {
+.header__button:hover {
   background-color: white;
   color: black;
 }
 
-.about_games {
+.about-games {
   background-color: #202027;
   position: relative;
   padding-bottom: 50px;
 }
-.about_games__star {
+
+.about-games__star {
   position: absolute;
 }
-.about_games__star1 {
+.about-games__star--1 {
   top: 77px;
   right: 0;
 }
-.about_games__star2 {
+.about-games__star--2 {
   top: 770px;
   left: 28px;
 }
-.about_games__star3 {
+.about-games__star--3 {
   top: 822px;
   left: 45px;
 }
 
-.about__title {
+.about-games__title {
   padding-top: 94px;
   font-weight: 700;
   font-size: 64px;
@@ -144,7 +145,7 @@ body {
   vertical-align: middle;
   color: #FFFFFF;
 }
-.about__desc {
+.about-games__description {
   margin-top: 24px;
   font-weight: 400;
   font-size: 24px;
@@ -154,7 +155,7 @@ body {
   color: #FFFFFF;
 }
 
-.games_1 {
+.games__group--1 {
   margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +164,7 @@ body {
   align-items: flex-start;
 }
 
-.games_2 {
+.games__group--2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -171,23 +172,23 @@ body {
   align-items: flex-end;
 }
 
-.card_game {
+.game-card {
   background-color: white;
   width: 378px;
   border-radius: 30px;
   padding-bottom: 36px;
 }
-.card_game_a {
+.game-card__link {
   text-decoration: none;
 }
-.card_game__content {
+.game-card__content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 35px;
 }
 
-.card_game__num {
+.game-card__number {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -196,7 +197,7 @@ body {
   vertical-align: bottom;
   color: #202027;
 }
-.card_game__name {
+.game-card__title {
   text-decoration-line: none;
   font-weight: 700;
   font-size: 32px;
