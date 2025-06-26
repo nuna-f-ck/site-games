@@ -198,6 +198,10 @@ body {
   text-decoration: none;
 }
 
+.game-card__image {
+  border-radius: 30px;
+}
+
 .game-card__content {
   display: flex;
   flex-direction: column;
