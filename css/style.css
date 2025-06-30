@@ -9,57 +9,80 @@ body {
 }
 
 .center {
-  padding-left: 30vh;
-  padding-right: 30vh;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
-.top {
+.header {
   position: relative;
   background: #E1FF8F;
-  height: 800px;
 }
-.top__star {
+
+.header__star {
   position: absolute;
 }
-.top__star1 {
+
+.header__star--1 {
   top: 94px;
   left: 63px;
 }
-.top__star2 {
+
+.header__star--2 {
   top: 69px;
   left: 156px;
 }
-.top__star3 {
+
+.header__star--3 {
   top: 538px;
   right: 448px;
 }
-.top__star4 {
+
+.header__star--4 {
   top: 568px;
   right: 365px;
 }
-.top__star5 {
+
+.header__star--5 {
   top: 0;
   right: 0;
 }
-.top__scroll_bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
+.scroll-bar {
+  padding: 0px;
+  gap: 10px;
+  border: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  display: flex;
+  align-items: center;
+  height: 90px;
   overflow: hidden;
-  margin-top: 156px;
 }
 
-.top_content {
+.scroll-bar__text {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  text-transform: uppercase;
+  padding-right: 51px;
+  padding-left: 51px;
+  white-space: nowrap;
+}
+
+.header__content {
   padding-top: 196px;
-  width: 769px;
-  height: 769px;
+  padding-bottom: 156px;
   display: flex;
   gap: 48px;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: flex-start;
 }
-.top_content__title {
+
+.header__title {
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
@@ -67,7 +90,8 @@ body {
   vertical-align: middle;
   color: #202027;
 }
-.top_content__text {
+
+.header__text {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -75,7 +99,9 @@ body {
   vertical-align: middle;
   color: #202027;
 }
-.top_content__button {
+
+.header__button {
+  text-decoration: none;
   background: #202027;
   width: 247px;
   height: 66;
@@ -93,33 +119,38 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
-.top_content__button:hover {
+
+.header__button:hover {
   background-color: white;
   color: black;
 }
 
-.about_games {
+.about-games {
   background-color: #202027;
   position: relative;
   padding-bottom: 50px;
 }
-.about_games__star {
+
+.about-games__star {
   position: absolute;
 }
-.about_games__star1 {
+
+.about-games__star--1 {
   top: 77px;
   right: 0;
 }
-.about_games__star2 {
+
+.about-games__star--2 {
   top: 770px;
   left: 28px;
 }
-.about_games__star3 {
+
+.about-games__star--3 {
   top: 822px;
   left: 45px;
 }
 
-.about__title {
+.about-games__title {
   padding-top: 94px;
   font-weight: 700;
   font-size: 64px;
@@ -128,7 +159,8 @@ body {
   vertical-align: middle;
   color: #FFFFFF;
 }
-.about__desc {
+
+.about-games__description {
   margin-top: 24px;
   font-weight: 400;
   font-size: 24px;
@@ -138,7 +170,7 @@ body {
   color: #FFFFFF;
 }
 
-.games_1 {
+.games__group--1 {
   margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +179,7 @@ body {
   align-items: flex-start;
 }
 
-.games_2 {
+.games__group--2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -155,25 +187,29 @@ body {
   align-items: flex-end;
 }
 
-.card_game {
-  background-color: white;
-  width: 378px;
-  height: 512px;
-  border-radius: 30px;
-}
-.card_game_short {
-  height: 473px;
+.game-card {
   background-color: white;
   width: 378px;
   border-radius: 30px;
+  padding-bottom: 36px;
 }
-.card_game__content {
+
+.game-card__link {
+  text-decoration: none;
+}
+
+.game-card__image {
+  border-radius: 30px;
+}
+
+.game-card__content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 35px;
 }
-.card_game__num {
+
+.game-card__number {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -182,7 +218,8 @@ body {
   vertical-align: bottom;
   color: #202027;
 }
-.card_game__name {
+
+.game-card__title {
   text-decoration-line: none;
   font-weight: 700;
   font-size: 32px;
@@ -190,4 +227,10 @@ body {
   letter-spacing: 0px;
   vertical-align: middle;
   color: #202027;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.footer {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
