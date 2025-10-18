@@ -1,3 +1,5 @@
+@use 'mobile';
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,6 @@ body {
 .top {
     position: relative;
     background: #E1FF8F;
-    background: darkred;
 
     &__star {
         position: absolute;
@@ -285,7 +286,7 @@ body {
         }
     }
 
-    &__title {
+    &__main_title {
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -378,4 +379,3 @@ body {
     }
 }
 
-@import '_mobile.scss';
